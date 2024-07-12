@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.upper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+.container{
+    display: flex;
+    width: 80vmin; /* Responsive size */
+    height: 80vmin; /* Responsive size */
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+.grid-item{
+    flex: 0 0 calc(100% / 16); /* Each item takes up 1/16th of the width */
+    height: calc(80vmin / 16); /* Ensure the height matches the width */
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+.newgrid-item{
+    flex: 0 0 auto;
+    border: 1px solid #eee;
+}
